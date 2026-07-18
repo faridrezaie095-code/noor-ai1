@@ -1,0 +1,56 @@
+{
+  "app": { "name": "Noor AI", "tagline": "Built by Saadat" },
+  "chat": {
+    "newChat": "New Chat",
+    "placeholder": "Message Noor AI...",
+    "send": "Send",
+    "thinking": "Noor AI is thinking...",
+    "imageMode": "Image generation mode",
+    "attach": "Attach file",
+    "generating": "Generating image...",
+    "copy": "Copy",
+    "copied": "Copied",
+    "download": "Download",
+    "emptyTitle": "How can I help you?",
+    "emptySubtitle": "Ask me anything or try one of these:",
+    "suggestions": {
+      "email": "Write a professional email",
+      "code": "Explain Python code",
+      "image": "Create a creative image",
+      "travel": "Plan a trip to Istanbul"
+    }
+  },
+  "history": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "thisWeek": "This Week",
+    "older": "Older",
+    "empty": "No conversations yet",
+    "search": "Search conversations..."
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "username": "Username",
+    "password": "Password",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to continue",
+    "registerTitle": "Create an account",
+    "registerSubtitle": "Just a username and password",
+    "usernameHint": "3-20 characters — letters, numbers, and _ only",
+    "passwordHint": "Minimum 6 characters"
+  },
+  "errors": {
+    "rateLimit": "You've used your 50 free messages today. Come back tomorrow!",
+    "imageLimitReached": "You've generated 5 images today. Resets tomorrow!",
+    "generic": "Something went wrong. Please try again.",
+    "fileTooBig": "File must be under 5MB",
+    "invalidCredentials": "Invalid username or password",
+    "usernameTaken": "This username is already taken",
+    "invalidUsername": "Username must be 3-20 characters, letters/numbers/underscore only",
+    "weakPassword": "Password must be at least 6 characters"
+  }
+}

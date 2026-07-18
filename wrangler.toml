@@ -1,0 +1,14 @@
+name = "noor-ai"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+[[kv_namespaces]]
+binding = "NOORAI_KV"
+id = "2860eb627fa8484b869e7bcebdcc5edf"
+preview_id = "717a9570726e4f4882086cb064b5e773"
+
+[[d1_databases]]
+binding = "NOORAI_DB"
+database_name = "noor-ai-db"
+database_id = "d28b9152-22ca-48b3-b846-9714039225bf"

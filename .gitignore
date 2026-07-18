@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.vercel/
+out/
+build/
+.env
+.env.local
+.env.production
+.DS_Store
+*.pem
+tsconfig.tsbuildinfo
+.wrangler/
