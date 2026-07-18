@@ -2,6 +2,8 @@ import { redirect, notFound } from "next/navigation";
 import { cookies } from "next/headers";
 import { ChatInterface } from "@/components/chat/ChatInterface";
 
+export const runtime = 'edge';
+
 async function getCloudflareContext() {
   try {
     const { getRequestContext } = await import("@cloudflare/next-on-pages");

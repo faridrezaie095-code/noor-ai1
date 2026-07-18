@@ -1,5 +1,5 @@
 import { RegisterForm } from "@/components/auth/RegisterForm";
-
+export const runtime = 'edge';
 export default function RegisterPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[var(--bg)] px-4">

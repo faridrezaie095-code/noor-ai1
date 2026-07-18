@@ -1,5 +1,6 @@
 import { LoginForm } from "@/components/auth/LoginForm";
 import { Suspense } from "react";
+export const runtime = 'edge';
 
 export default function LoginPage() {
   return (

@@ -1,6 +1,8 @@
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 
+export const runtime = 'edge';
+
 async function getCloudflareContext() {
   try {
     const { getRequestContext } = await import("@cloudflare/next-on-pages");
