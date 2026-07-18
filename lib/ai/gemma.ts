@@ -22,14 +22,17 @@ export async function streamGemmaResponse(
   const genAI = new GoogleGenerativeAI(apiKey);
 
   const model = genAI.getGenerativeModel({
-    model: MODEL_NAME,
-    systemInstruction: systemPrompt,
-    generationConfig: {
-      temperature: 0.7,
-      topP: 0.9,
-      maxOutputTokens: 4096,
+  model: MODEL_NAME,
+  systemInstruction: systemPrompt,
+  generationConfig: {
+    temperature: 0.7,
+    topP: 0.9,
+    maxOutputTokens: 4096,
+    thinkingConfig: {
+      thinkingLevel: "minimal",
     },
-  });
+  } as any,
+});
 
   const history = messages.slice(0, -1).map((msg) => ({
     role: msg.role === "assistant" ? "model" : "user",
