@@ -4,6 +4,7 @@ import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
+import { common } from "lowlight";
 import { Copy, Check } from "lucide-react";
 import { ImageMessage } from "./ImageMessage";
 
@@ -105,7 +106,7 @@ export function MessageBubble({ message, locale }: MessageBubbleProps) {
         >
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
-            rehypePlugins={[rehypeHighlight]}
+            rehypePlugins={[[rehypeHighlight, { languages: common }]]}
             components={{
               code({ className, children, ...props }) {
                 const isBlock = className?.startsWith("language-");
