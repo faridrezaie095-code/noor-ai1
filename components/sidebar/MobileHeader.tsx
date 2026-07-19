@@ -30,7 +30,9 @@ export function MobileHeader({ chats, user, locale }: MobileHeaderProps) {
 
       <div className="lg:hidden h-14 flex-shrink-0" />
 
-      <Sidebar chats={chats} user={user} locale={locale} isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      <div className="lg:hidden">
+  <Sidebar chats={chats} user={user} locale={locale} isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+</div>
     </>
   );
 }
